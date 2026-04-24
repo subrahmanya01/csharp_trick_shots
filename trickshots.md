@@ -52,7 +52,7 @@ object[] objs = arr;
 
 objs[0] = 123;
 ```
-
+6.
 ```csharp
 class Base
 {
@@ -82,5 +82,15 @@ class Derived : Base
 
 Base x = new Derived();
 x.Foo();
+```
+7.
+```
+class A {}
+class B : A {}
+
+A x = new B();
+
+Console.WriteLine(x is A); 
+Console.WriteLine(x.GetType() == typeof(A));
 ```
 
