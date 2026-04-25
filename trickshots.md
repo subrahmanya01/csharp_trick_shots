@@ -94,3 +94,10 @@ Console.WriteLine(x is A);
 Console.WriteLine(x.GetType() == typeof(A));
 ```
 
+```
+object a = 5;
+object b = 5;
+
+Console.WriteLine(a == b);
+Console.WriteLine(a.Equals(b));
+```
